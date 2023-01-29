@@ -1,7 +1,7 @@
 import os
 import sys
 
-import arxiv_scrapper
+import arxiv_analyzer
 
 sys.path.insert(0, os.path.abspath("."))
 sys.path.insert(0, os.path.abspath("../.."))
@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath("../.."))
 project = "Arxiv Scrapper"
 copyright = "2023, Niklas Hahn"
 author = "Niklas Hahn"
-release = arxiv_scrapper.__version__
+release = arxiv_analyzer.__version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

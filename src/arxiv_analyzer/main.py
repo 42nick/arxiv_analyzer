@@ -1,4 +1,4 @@
-from arxiv_scrapper.example_function import add_two_values
+from arxiv_analyzer.example_function import add_two_values
 
 
 def main() -> None:
