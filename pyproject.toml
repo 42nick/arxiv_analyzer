@@ -3,21 +3,21 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "arxiv_scrapper"
+name = "arxiv_analyzer"
 version = "0.0.1"
 readme = "README.md"
 requires-python = ">=3.7"
 license = { text = "MIT License" }
-dependencies = ["arxivscraper", "pandas"]
+dependencies = ["arxiv", "arxivscraper", "pandas"]
 [project.optional-dependencies]
-dev = ["arxiv_scrapper[test]", "arxiv_scrapper[docs]", "tox"]
+dev = ["arxiv_analyzer[test]", "arxiv_analyzer[docs]", "tox"]
 test = ["pytest", "pytest-cov", "coverage", "black", "isort", "pylint", "mypy"]
 docs = ["sphinx", "myst-parser", "sphinx_rtd_theme"]
 
 [tool.setuptools.packages.find]
 where = ["src"] # list of folders that contain the packages (["."] by default)
 include = [
-  "arxiv_scrapper*",
+  "arxiv_analyzer*",
 ] # package names should match these glob patterns (["*"] by default)
 namespaces = false # to disable scanning PEP 420 namespaces (true by default)
 
@@ -57,7 +57,7 @@ disable = """
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-v --cov=arxiv_scrapper --cov-branch --cov-report html:reports/html --cov-report xml:reports/coverage.xml --cov-report=term-missing"
+addopts = "-v --cov=arxiv_analyzer --cov-branch --cov-report html:reports/html --cov-report xml:reports/coverage.xml --cov-report=term-missing"
 
 [tool.coverage.report]
 exclude_lines = [

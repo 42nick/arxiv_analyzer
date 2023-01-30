@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.abspath("../.."))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Arxiv Scrapper"
+project = "Arxiv analyzer"
 copyright = "2023, Niklas Hahn"
 author = "Niklas Hahn"
 release = arxiv_analyzer.__version__

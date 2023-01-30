@@ -1,4 +1,4 @@
-Welcome to arxiv_scrapper's documentation!
+Welcome to arxiv_analyzer's documentation!
 ===============================================
 
 .. toctree::

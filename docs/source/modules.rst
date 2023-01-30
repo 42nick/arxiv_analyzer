@@ -1,7 +1,7 @@
-arxiv_scrapper
+arxiv_analyzer
 ===================
 
 .. toctree::
    :maxdepth: 4
 
-   arxiv_scrapper
+   arxiv_analyzer
